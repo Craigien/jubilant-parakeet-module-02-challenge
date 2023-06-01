@@ -1,0 +1,76 @@
+*
+{
+    color: white;
+    background-color: #0E1F3E;
+}
+
+body
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header
+{
+    display: flex;
+    flex-direction: row;
+}
+
+nav
+{
+    justify-content: flex-end;
+    /* align-items: flex-end; */
+    /* flex: 1; */
+    margin-left: auto;
+}
+
+main
+{
+    display: flex;
+    /* flex-flow: row wrap; */
+    /* flex: 1 100%; */
+}
+
+#project-container
+{
+    flex-wrap: wrap;
+    order: 2;
+}
+
+.other-projects
+{
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.other-projects-img
+{
+    width: 400px;
+    height: auto;
+}
+
+aside
+{
+    /* justify-content: flex-start; */
+    /* margin-top: 80px; */
+    /* margin-right: 10px; */
+    /* flex: 1 auto; */
+    order: 1;
+    /* width: 20%; */
+}
+
+aside img
+{
+    width: auto;
+    object-fit: contain;
+}
+
+#first-project-img
+{
+    width: auto;
+    height: 900px;
+}
+
+#project-container p
+{
+    display: none;
+}
