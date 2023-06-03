@@ -87,7 +87,7 @@ aside
 
 #project-container p
 {
-    display: none;
+    /* display: none; */
 }
 
 #other-projects-container
@@ -127,8 +127,58 @@ aside p a
     color: white;
 }
 
+#first-project-img,
+.other-projects-img
+{
+    border-image: linear-gradient(gray, lightgray) 45;
+    border-width: 10px;
+    border-style: solid;
+}
 
+#first-project-img:hover,
+.other-projects-img:hover
+{
+    opacity: 0.1;
+    transition: 0.3s ease;
+}
 
+#projects h4
+{
+    position: absolute;
+    padding-left: 1%;
+}
+
+#first-project-p
+{
+    position: absolute;
+    padding-top: 3%;
+    padding-left: 1%;
+    width: 25%;
+    height: auto;
+    opacity: 0;
+}
+
+.other-projects p
+{
+    position: absolute;
+    padding-top: 3%;
+    padding-left: 1%;
+    width: 25%;
+    height: auto;
+    opacity: 0;
+}
+
+#first-project-img:hover #first-project-p
+{
+    opacity: 1;
+    transition: 0.3s ease;
+}
+
+.other-projects:hover .other-projects img
+{
+    opacity: 1;
+    transition: 0.3s ease;
+}
 
 
 
