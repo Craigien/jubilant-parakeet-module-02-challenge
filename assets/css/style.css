@@ -1,18 +1,27 @@
 *
 {
-    color: white;
-    background-color: #0E1F3E;
+    box-sizing: border-box;
 }
 
 body
 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0E1F3E;
+    color: white;
 }
 
 header
 {
     display: flex;
     flex-direction: row;
+    background-color: white;
+}
+
+h1
+{
+    background-color: white;
+    color: #0E1F3E;
+    padding-left: 1%;
 }
 
 nav
@@ -21,16 +30,126 @@ nav
     /* align-items: flex-end; */
     /* flex: 1; */
     margin-left: auto;
+    background-color: white;
+}
+
+nav ul
+{
+    background-color: white;
+}
+
+nav ul li
+{
+    background-color: white;
+    color: #0E1F3E;
 }
 
 main
 {
-    display: flex;
     /* flex-flow: row wrap; */
     /* flex: 1 100%; */
-    min-height: 100%;
+    /* min-height: 100%; */
+    display: flex;
+    flex-wrap: wrap;
 }
 
+aside
+{
+    flex: 1;
+    margin-top: 100px;
+    width: 33%;
+    height: auto;
+}
+
+#project-container
+{
+    flex: 3;
+    padding-left: 2%;
+}
+
+#project-container h2
+{
+    padding-left: 1%;
+}
+
+#first-project-img
+{
+    width: 1052px;
+    height: 650px;
+}
+
+.other-projects-img
+{
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+}
+
+#project-container p
+{
+    display: none;
+}
+
+#other-projects-container
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    /* flex: 2 1 200px; */
+    width: 1052px;
+    
+}
+
+.other-projects
+{
+    margin: 10px;
+}
+
+aside h3
+{
+    padding-left: 3%;
+}
+
+aside img
+{
+    width: 90%;
+    padding-left: 3%;
+}
+
+aside p
+{
+    width: 90%;
+    padding-left: 3%;
+}
+
+aside p a
+{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 #project-container
 {
     flex-wrap: wrap;
@@ -47,7 +166,22 @@ main
     flex: 2 1 200px;
     width: 80%;
 }
-/*
+
+#first-project
+{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#first-project-p
+{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+}
+
+
 .other-projects
 {
     flex-wrap: wrap;
@@ -55,7 +189,7 @@ main
     flex: 0 0 400px;
     justify-content: center;
 }
-*/
+
 .other-projects-img
 {
     width: 500px;
@@ -83,12 +217,36 @@ aside img
     height: 700px;
 }
 
+
+.other-projects #second-project-p:hover
+{
+    display: inline-block;
+}
+
 #project-container p
 {
     display: none;
 }
 
-.other-projects:hover
+
+
+.other-projects #first-project-p:hover,
+#second-project-p:hover,
+#third-project-p:hover,
+#fourth-project-p:hover,
+#fifth-project-p:hover
 {
-    opacity: 0.3;
+    display: block;
 }
+
+
+#first-project-img:hover
+{
+    opacity: 0.1;
+}
+
+.other-projects-img:hover
+{
+    opacity: 0.1;
+}
+*/
