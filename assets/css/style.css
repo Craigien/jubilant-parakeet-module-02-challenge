@@ -168,7 +168,7 @@ aside p a
     opacity: 0;
 }
 
-#first-project-img:hover #first-project-p
+#first-project:hover #first-project-p
 {
     opacity: 1;
     transition: 0.3s ease;
