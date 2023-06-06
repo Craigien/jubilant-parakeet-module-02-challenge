@@ -201,6 +201,48 @@ aside p a
 .page-links
 {
     font-weight: bold;
+    display: block;
+    padding-top: 15px;
+}
+
+@media screen and (max-width: 1176px)
+{
+    #first-project
+    {
+        order: 1;
+    }
+
+    .other-projects
+    {
+        order: 2;
+    }
+
+    aside
+    {
+        order: 3;
+    }
+}
+
+@media screen and (max-width: 750px)
+{
+    main,
+    #other-projects-container,
+    .other-projects
+    {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .other-projects
+    {
+        justify-content: center;
+        align-items: center;
+    }
+
+    aside
+    {
+        width: 100%;
+    }
 }
 
 
