@@ -10,6 +10,7 @@ body
     color: white;
 }
 
+/* Flexbox and background color set for header */
 header
 {
     display: flex;
@@ -24,6 +25,7 @@ h1
     padding-left: 1%;
 }
 
+/* Styling for nav elements */
 nav
 {
     justify-content: flex-end;
@@ -53,71 +55,31 @@ nav ul li a
     font-weight: bold;
 }
 
-nav ul li a:visited
-{
-    color: #0E1F3E;
-}
-
 nav ul li a:hover
 {
     background-color: #0E1F3E;
     color: white;
 }
 
+nav ul li a:visited
+{
+    color: #0E1F3E;
+}
+
+/* Flexbox for main content */
 main
 {
     display: flex;
     flex-wrap: wrap;
 }
 
+/* Styling for about section */
 aside
 {
     flex: 1;
     margin-top: 5%;
     width: 33%;
     height: auto;
-}
-
-#project-container
-{
-    flex: 3;
-    padding-left: 2%;
-}
-
-#project-container h2
-{
-    padding-left: 1%;
-}
-
-#first-project
-{
-    width: 1052px;
-}
-
-#first-project-img
-{
-    width: 1052px;
-    height: 650px;
-}
-
-.other-projects
-{
-    margin: 10px;
-}
-
-.other-projects-img
-{
-    width: 500px;
-    height: 400px;
-    object-fit: cover;
-}
-
-#other-projects-container
-{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    width: 1052px;
 }
 
 aside h3
@@ -142,6 +104,50 @@ aside p a
     color: white;
 }
 
+#project-container
+{
+    flex: 3;
+    padding-left: 2%;
+}
+
+#project-container h2
+{
+    padding-left: 1%;
+}
+
+/* Styling for first project */
+#first-project
+{
+    width: 1052px;
+}
+
+#first-project-img
+{
+    width: 1052px;
+    height: 650px;
+}
+
+/* Styling for remaining projects */
+#other-projects-container
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 1052px;
+}
+
+.other-projects
+{
+    margin: 10px;
+}
+
+.other-projects-img
+{
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+}
+
 #first-project-img,
 .other-projects-img
 {
@@ -150,6 +156,7 @@ aside p a
     border-style: solid;
 }
 
+/* Change opacity of project images on hover */
 #first-project-img:hover,
 .other-projects-img:hover
 {
@@ -166,6 +173,7 @@ aside p a
     margin-left: 0.5%;
 }
 
+/* Styling for first project text */
 #first-project-p
 {
     position: absolute;
@@ -176,6 +184,7 @@ aside p a
     opacity: 0;
 }
 
+/* Stying for remaining projects text */
 .other-projects-p
 {
     position: absolute;
@@ -186,12 +195,14 @@ aside p a
     opacity: 0;
 }
 
+/* Make first project text visible on hover */
 #first-project:hover #first-project-p
 {
     opacity: 1;
     transition: 0.3s ease;
 }
 
+/* Make other project text visible on hover */
 .other-projects:hover .other-projects-p
 {
     opacity: 1;
@@ -205,6 +216,24 @@ aside p a
     padding-top: 15px;
 }
 
+/* Styling for footer and links */
+footer ul li
+{
+    list-style-type: none;
+}
+
+footer ul li a
+{
+    color: white;
+}
+
+footer ul li a:hover
+{
+    background-color: white;
+    color: #0E1F3E;
+}
+
+/* Change order of projects and about display */
 @media screen and (max-width: 1176px)
 {
     #first-project
@@ -223,6 +252,7 @@ aside p a
     }
 }
 
+/* Change other projects display to column */
 @media screen and (max-width: 750px)
 {
     main,
@@ -233,134 +263,8 @@ aside p a
         justify-content: center;
     }
 
-    .other-projects
-    {
-        justify-content: center;
-        align-items: center;
-    }
-
     aside
     {
         width: 100%;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-#project-container
-{
-    flex-wrap: wrap;
-    order: 2;
-    width: 80%;
-    margin-left: 10px;
-}
-
-#other-projects-container
-{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    flex: 2 1 200px;
-    width: 80%;
-}
-
-#first-project
-{
-    position: relative;
-    text-align: center;
-    color: white;
-}
-
-#first-project-p
-{
-    position: absolute;
-    top: 100%;
-    left: 50%;
-}
-
-
-.other-projects
-{
-    flex-wrap: wrap;
-    flex-direction: column;
-    flex: 0 0 400px;
-    justify-content: center;
-}
-
-.other-projects-img
-{
-    width: 500px;
-    height: 400px;
-    object-fit: cover;
-}
-
-aside
-{
-    margin-right: 10px;
-    order: 1;
-    width: 250px;
-}
-
-aside img
-{
-    width: 200px;
-    height: auto;
-    object-fit: contain;
-}
-
-#first-project-img
-{
-    width: auto;
-    height: 700px;
-}
-
-
-.other-projects #second-project-p:hover
-{
-    display: inline-block;
-}
-
-#project-container p
-{
-    display: none;
-}
-
-
-
-.other-projects #first-project-p:hover,
-#second-project-p:hover,
-#third-project-p:hover,
-#fourth-project-p:hover,
-#fifth-project-p:hover
-{
-    display: block;
-}
-
-
-#first-project-img:hover
-{
-    opacity: 0.1;
-}
-
-.other-projects-img:hover
-{
-    opacity: 0.1;
-}
-*/
