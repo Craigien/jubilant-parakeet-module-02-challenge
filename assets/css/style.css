@@ -211,6 +211,12 @@ aside p a
     padding-top: 15px;
 }
 
+.image-credit
+{
+    display: block;
+    padding-top: 15px;
+}
+
 /* Styling for footer and links */
 footer ul li
 {
