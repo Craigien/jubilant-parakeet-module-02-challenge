@@ -18,7 +18,7 @@ Hover over the images of the various projects to view more information about the
 
 Portfolio screenshot:
 
-![Portfolio Screenshot](assets\images\Portfolio-Screenshot.png)
+![Portfolio Screenshot](assets/images/Portfolio-Screenshot.png)
 
 ## Credits
 
