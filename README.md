@@ -12,7 +12,7 @@ N/A
 
 ## Usage
 
-This application can be accessed at this URL: 
+This application can be accessed at this URL: https://craigien.github.io/jubilant-parakeet-module-02-challenge/
 
 Hover over the images of the various projects to view more information about them.  Click on the images to view the applications.  Click on the navigation links at the top right of the screen to move around the webpage.  There are also links to both my GitHub and LinkedIn profiles at the bottom left of the screen.
 
