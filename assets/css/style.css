@@ -61,11 +61,6 @@ nav ul li a:hover
     color: white;
 }
 
-nav ul li a:visited
-{
-    color: #0E1F3E;
-}
-
 /* Flexbox for main content */
 main
 {
